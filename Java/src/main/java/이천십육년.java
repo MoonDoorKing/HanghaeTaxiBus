@@ -21,7 +21,7 @@ public class 이천십육년 {
 
     public static void main(String args[]) {
         이천십육년 y2016 = new 이천십육년();
-        System.out.println("결과는 : "+ y2016.solution(1,1));
+        System.out.println("결과는 : "+ y2016.solution(4,6));
 
     }
 }
