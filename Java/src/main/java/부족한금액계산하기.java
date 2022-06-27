@@ -1,27 +1,23 @@
 public class 부족한금액계산하기 {
     public long solution(int price, int money, int count) {
         long answer = 0;
-        long pay =0; //처음 가지고 있던 금액 money : 1 ≤ money ≤ 1,000,000,000, money는 자연수
+        long pay = 0; // 처음 가지고 있던 금액 money : 1 ≤ money ≤ 1,000,000,000, money는 자연수
 
-        for(int i=0; i <= count; i++)
+        for (int i = 0; i <= count; i++)
         {
             pay += (price * i);  // price 가 100원 이면 100 + 200 + 300 식으로 더해져야함 pay = pay + price * i 와 같음
-
-            if(pay <= money) // 가진 돈이 내야할 돈보다 많으면 0을 반환
-            {
-                answer = 0;
-            }
-            else // 가진 돈이 내야할 돈보다 적으면
-            {
-                answer = pay - money;   // pay 에서 money 를 빼서 모자란 금액을 반환
-            }
+        }
+        if (!(pay <= money)) // 가진 돈이 내야할 돈보다 적으면 pay 에서 money 를 뺌
+        {
+            answer = pay - money;
         }
 
         return answer;
     }
+
     public static void main(String[] args) {
         부족한금액계산하기 Account = new 부족한금액계산하기();
-        System.out.println("결과 : "+ Account.solution(100,1000,6));
+        System.out.println("결과 : " + Account.solution(100, 1000, 6));
     }
 }
 
