@@ -12,7 +12,7 @@ public class 콜라츠추측 {
 
             answer++; // while 문이 돌때마다 answer 를 +1 해줌
 
-            if(answer > 500)
+            if(answer >= 500)
                 return -1;
         }
 
