@@ -3,7 +3,7 @@ import java.util.*;
 
 public class 나누어떨어지는숫자배열 {
     public int[] solution(int[] arr, int divisor) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         for (int n : arr) // foreach 문 사용
         {
@@ -33,7 +33,7 @@ public class 나누어떨어지는숫자배열 {
 
         int arr[] = {5, 9, 7, 10};
 
-        System.out.println("결과 : " + Arrays.toString(list.solution(arr,5))); //배열 출력력
+        System.out.println("결과 : " + Arrays.toString(list.solution(arr,5))); //배열 출력
 
     }
 }

@@ -1,6 +1,6 @@
 class 가운데글자가져오기 {
     String getMiddle(String s) {
-        String answer= null;
+        String answer= "";
 
         if(s.length() % 2 == 0)
         {
