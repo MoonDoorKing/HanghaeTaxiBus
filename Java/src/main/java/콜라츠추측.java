@@ -1,6 +1,6 @@
 public class 콜라츠추측 {
     public int solution(int num) {
-        long n = num; // int 를 쓰면 오버플로우가 나와서 프로그래머스 통과가 안됌...
+        long n = num; // int 를 쓰면 오버플로우가 나와서 프로그래머스 통과가 안됌... https://youtu.be/sS0UqCOp3uU <- 오버플로우
         int answer= 0;
 
         while(n != 1) // 1 일시 멈춤
